@@ -1,0 +1,57 @@
+<html>
+<head> 
+  <title> GDP Database</title>
+  <link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet"
+        href="./database.css">
+  <link type="text/css" rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.min.css">
+</head>
+  
+  <body>
+        
+  <div class="form_elements" id="forms">
+    
+  <!-- form to search from the database -->
+    <h2><center>GDP DATABASE</center></h2>
+    
+  <form action="database.php" method="POST" name="database_form">
+    
+    <!-- selection Option -->
+    <div class="row first-row">
+    <div>
+      <span class="label label-default">Select Option: </span>
+      <select name="selectionOption" class="form-control selectee" onclick="callme()">
+      <option value="first"> Rank </option>
+      <option value="second"> Country Code </option>
+      <option value="third"> Country Name</option>
+      </select>
+    </div>
+    </div>
+    
+    <br>
+    <!-- search according to rank -->
+    <div class="row second-row">
+      <span class="label label-default">  Search Value: </span>    
+    <input type="number" class="form-control selectee2" placeholder="Rank" name="get_Value" size=10 required>
+    </div>
+    
+    
+    <br>
+    
+    <div class="row third-row">
+      <input  onclick="submission()"  type="submit" class="btn btn-lg btn-primary" value="SEARCH">
+    </div>
+    
+  </form>
+</div>
+</body>
+
+  <!-- script for the jquery and bootstrap -->
+  <script src="./jquery-3.1.1.js"></script>
+  
+  <script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"> </script>
+  <script src="./jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./database.js"></script>
+</html>

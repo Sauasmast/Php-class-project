@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title> Casino Game</title>
+  <link rel="stylesheet" type="text/css" href="./design.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1> <strong> <b> <center> CASINO CRAPS </center> </b> </strong> </h1>
+    
+    <div class="small-part">
+      <div class="second-part">
+      <form action="firstroll.php" method='POST'>
+    <input type="submit" class="btn btn-primary btn-lg button" value="Roll a dice">
+        <img class="dice" src="rolling.gif">
+      </form>
+    </div>
+      </div>
+    
+        <div id="typewriter">
+          <h3> <strong> <b> YOUR GUIDE </b> </strong> </h3>
+          <p class="typingtest"> </p>
+    </div>
+    
+  </div>
+</body>
+  
+<script src="jquery-3.1.1.js"></script>
+  <script src="typed.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+      Typed.new('.typingtest', {
+        strings: ["Welcome to Crap Game <br/> I will guide you through the process <br/> Are you willing to bet? <br/> Are you ready to play?", " Roll a dice to begin <br /> If you get 7 or 11 win the bet. <br/> If you get 2, 3 or 12 you lose your bet","Number other than that <br /> will take you to next round.", "Let the fun begin. </br> Ready to win some money? <br/> Roll the dice to start. <br /> Thank you"],
+        typeSpeed: 10
+      });
+  });
+</script>
+
+</html>

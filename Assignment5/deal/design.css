@@ -1,0 +1,46 @@
+.box {
+    border: 10px solid white;
+    height: 73%;
+    border-radius: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("curtain1.jpg");
+}
+
+h1{
+  font-family: Comic Sans MS, cursive, sans-serif;
+  color:white;
+  font-weight:bolder;
+  font-size:4em;
+}
+
+.middle{
+  border: 10px solid red;
+}
+
+body{
+  background-color:black;
+}
+
+.inside{
+    font-size: 4em;
+    position: absolute;
+    top: 70%;
+    left: 12%;
+}
+
+.but{
+  background: transparent;
+   cursor:pointer;
+  border:none !important;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+}
+
+  

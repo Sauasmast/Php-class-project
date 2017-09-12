@@ -1,0 +1,55 @@
+.la{
+font-size: 18px;
+   border-radius: 10px;
+}
+
+#miles{
+      position: relative;
+    left: 1px;
+    top: -3px;
+}
+
+#symbol{
+  font-size: 26px;
+    color: white;
+    position: relative;
+    left: 30px;
+    top: 7px;
+}
+
+body{
+  background-color: black;
+}
+
+.int{
+ border-radius: 10px;
+}
+
+#kilo{
+      position: relative;
+    top: -2px;
+    left: 63px;
+}
+
+#kilometer{
+      position: relative;
+    left: 61px;
+}
+
+.btun{
+  position:relative;
+  left: 206px;
+  top: 18px;
+}
+
+h1{
+  font-weight:bold;
+  color:white;
+}
+
+.para{
+color:white;
+  font-weight: bold;
+}
+
+

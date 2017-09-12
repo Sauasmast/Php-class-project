@@ -1,0 +1,46 @@
+.first{
+  width:109px;
+    position: relative;
+    left: 7em;
+    top: -0.47em;
+}
+
+body{
+  background-image: url(math.jpg);
+}
+
+.main_div{
+  background-color:black;
+    width: 369px;
+      height: 270px;
+    border: 10px solid black;
+    border-radius:30px;
+      position: relative;
+    top: 165px;
+    left: 521px;
+}
+
+.second{
+      width: 109px;
+}
+
+.from{
+    font-size: 18px;
+    position: relative;
+    left: 1em;
+    top: 1em;
+}
+
+.to{
+  font-size:18px;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+
+.second{
+      position: relative;
+    left: 75px;
+    top: -8px;
+}
+

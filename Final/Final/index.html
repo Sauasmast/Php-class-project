@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title> Prime Number</title>
+    <link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" type="text/css" href="./index.css">
+</head>
+
+<body>
+<div class="main_div"> 
+  <h2 style="color:white"> <center> <strong>LOCK CALCULATION</strong></center></h2>
+  
+  <form action="calculation.php" method="POST" name="calculation_form" onsubmit="return validateForm()">
+    <div class="row">
+    <span class="label label-default from" style="font-size:18px; position:relative; left:1em; top:1em">Number of Digits in combination: </span>    
+    <input type="number" class="form-control first" name="gotit" size=10 required>
+      
+       <span class="label label-default to"> Number of possible number of choices: </span> 
+    <input id="To" type="number" class="form-control second" name="get_Value" required>
+    </div>
+    <center> <input type="submit" class="btn btn-success btn-lg" value="Combinations"> </center>
+    
+    <input type="reset" class="btn btn-sucess btn-lg" value="reset" style="position: relative;
+    top: -44px;">
+    
+  </form>
+  
+</div>
+  
+  </body>
+   <script src="./jquery-3.1.1.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./error.js"></script>
+</html>

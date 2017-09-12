@@ -1,0 +1,97 @@
+body{
+  background-image: url("casino1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-weight: 900;
+}
+
+.small-part{
+  background-color: white;
+  border-radius: 10%;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  left: 54%;
+  top: 10%;
+}
+
+.second-part{
+  background-color:black;
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+}
+
+.dice{
+    position: absolute;
+    top: 1em;
+    height: 78%;
+    left: 20%;
+}
+
+.button{
+    position: absolute;
+    left: 40%;
+    top: 15em;
+}
+
+#typewriter{
+  width: 51%;
+  height: 34%;
+  position: relative;
+  top: -22em;
+}
+
+p{
+  font-weight:900px;
+  font-family: cursive;
+  color:white;
+  font-size: 2em;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.src {
+    height: 50%;
+    border-radius: 20px;
+    position: absolute;
+    left: 55%;
+    top: 26%;
+}
+
+
+.src1{
+    height: 50%;
+    border-radius: 20px;
+    position: absolute;
+    left: 18%;
+    top: 26%;
+}
+
+.you{
+  font-weight: 900;
+  color: white;
+}

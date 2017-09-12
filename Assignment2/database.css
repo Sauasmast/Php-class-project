@@ -1,0 +1,75 @@
+body{
+  background-image: url("./Background.jpg");
+  background-size: 100%;
+  overflow-x: hidden;
+}
+
+.form_elements{
+    background-color: black;
+    width: 443px;
+    height:250px;
+  
+    position: relative;
+    top: 206px;
+    left: 490px;
+  
+    border: 12px solid white;
+    border-radius: 20px;
+}
+
+center{
+  color:white;
+  font-size:49px;
+}
+
+.form-control{
+  width:158px;
+}
+
+.label{
+  font-size:20px;
+}
+
+.first-row{
+      position: relative;
+    top: 2px;
+    left: 58px;
+}
+.selectee{
+     position: relative;
+    top: -26px;
+    left: 167px;
+}
+
+.second-row{
+    position: relative;
+    top: -31px;
+    left: 58px;
+}
+
+.selectee2 {
+position: relative;
+    left: 168px;
+    top: -25px;
+}
+
+.btn-primary{
+      position: relative;
+    top: -63px;
+    left: 179px;
+}
+
+#grad{
+  background: red; 
+  background: -webkit-linear-gradient(skyblue,blue);
+  background: -o-linear-gradient(skyblue,blue); /* For Opera 11.1 to 12.0 */
+  background: linear-gradient(skyblue,blue); /* Standard syntax */
+  background: -moz-linear-gradient(white); /* For Firefox 3.6 to 15 */
+}
+#goingback(){
+    position: relative;
+    top: 7px;
+    left: 23px;
+}
+
+

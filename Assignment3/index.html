@@ -1,0 +1,486 @@
+<html>
+
+<!-- Head part of html with bootstrap and css link-->  
+<head>
+   <!-- For the responsive design of the mobile view-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title> Review Form </title>
+  
+    <link type="text/css" rel="stylesheet" href="./index.css">
+    <link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+  <!-- Form for the review -->
+<body>
+
+  <!-- Background image and the caldwell university logo -->
+  <div class="container-fluid background">
+    <img class="col-md-offset-3" src="Pics/header.jpg" alt="Logo of Caldwell University">
+  </div>
+  
+  
+  <!-- Second Division describing about the content of the html page -->
+  <div class="container information">
+  Student Computing And Equipment Survey
+  </div>
+  
+  <!-- All the form elements -->
+  <form class="form-control" name="reviewForm" action="database.php" method="POST">
+    
+    
+  <!-- first line of my form containing information about the name and all that -->
+  <div class="form-group form-inline">
+    <label for="collegeUniversity"> College/University Name </label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="collegeName" placeholder="College/University Name" required>
+    
+    <label for="classof" > Class </label>
+    <select id="classof" name="year" required>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+    </select>
+      
+    <label for="expectedDate">Expected Graduation Year</label>
+    <select id="expectedDate" name="expectedDate" required>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+    </select>
+  </div>
+    
+    <!-- Question Regarding the survey -->
+    <div class="question">
+    What Kind of media and computers do you have at home? 
+    </div>
+    
+    
+  <!-- Information about the checkboxes -->  
+   
+    <div class="checkbutton">
+    
+    <input class="form-check-input" type="checkbox" name="internetInformation[]" id="nameInformation" value="1">
+    <label for="nameInformation"> FIOS, Cable Or SatelliteTV</label>
+    
+    <input class="form-check-input" type="checkbox" name="internetInformation[]" id="nameInformation" value="2">
+     <label for="nameInformation"> Smartphone </label>
+      
+    <input class="form-check-input" type="checkbox" name="internetInformation[]" id="nameInformation" value="3">
+    <label for="nameInformation"> Windows Computer</label>
+      
+    <input class="form-check-input" type="checkbox" name="internetInformation[]" id="nameInformation" value="4"> 
+    <label for="nameInformation"> Apple Computer </label>
+      
+    <input class="form-check-input" type="checkbox" name="internetInformation[]" id="nameInformation" value="5">
+    <label for="nameInformation"> MS Office 2010 </label>
+    
+    </div>
+    
+    <div> 
+    Please select the appropriate option for you.
+    </div>    
+         
+      
+      <hr>
+      
+      <!--This is the radio button forms -->
+      
+      <div class="form-group form-inline">
+        <label>1. I like my Computer. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q1" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q1" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q1" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+      
+      <hr>
+    
+          <div class="form-group form-inline">
+        <label>2. I would rather use smartphone or tablet rather  than my computer</label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q2" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q2" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q2" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+        <div class="form-group form-inline">
+        <label>3. I like the Operating System in my Computer (MAC, LINUX, Windows) </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q3" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q3" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q3" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q3" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q3" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+        <div class="form-group form-inline">
+        <label>4. I like Microsoft Office software for word processing and Spreadsheet. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q4" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q4" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q4" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q4" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q4" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+    
+        <div class="form-group form-inline">
+        <label>5. I love using my computer.</label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q5" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q5" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q5" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q5" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q5" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+    
+        <div class="form-group form-inline">
+        <label>6. My computer is the best Computer in the world</label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q6" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q6" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q6" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q6" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q6" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+        <div class="form-group form-inline">
+        <label>7. My computer is very fast and efficient. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q7" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q7" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q7" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q7" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q7" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+    
+        <div class="form-group form-inline">
+        <label>8. I would never exchange my computer with others. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q8" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q8" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q8" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q8" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q8" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+       <div class="form-group form-inline">
+        <label>9. My computer can perform heavy task without any problem. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q9" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q9" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q9" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q9" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q9" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+
+       <div class="form-group form-inline">
+        <label>10. My internet is the fastest internet and reliable internet. </label>
+        <br>
+        
+       <div class="radio">
+          <label>
+          <input type="radio" name="q0" id="q1" value="1" required> Strongly Agreed</label>
+        </div>
+        
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q0" id="q1" value="2" required>
+          Agreed
+        </label>
+      </div>
+              
+      <div class="radio">
+          <label>
+          <input type="radio" name="q0" id="q1" value="3" required> Undecided </label>
+        </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="q0" id="q1" value="4" required>
+         Disagree
+        </label>
+      </div>
+        
+      <div class="radio">
+        <label>
+          <input type="radio" name="q0" id="q1" value="5" required>
+         Strongly Disagree
+        </label>
+      </div>
+      
+     </div>
+    <hr>
+    
+    <div class="btn">
+    <input class="btn btn-primary btn-lg" type="submit" value="Submit"> 
+    </div>
+  
+  </form>
+  
+</body>
+  
+  <!-- Link for the jquery tags -->
+        <script src="jquery-3.1.1.js"></script>
+        <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+</html>
